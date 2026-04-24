@@ -1,9 +1,7 @@
-
 plugins {
-    kotlin("jvm") version "1.9.0"
+    kotlin("jvm") version "1.9.24"
     application
 }
-
 repositories {
     mavenCentral()
 }
@@ -25,4 +23,14 @@ dependencies {
 
 application {
     mainClass.set("MainKt")
+}
+
+kotlin {
+    jvmToolchain(17)
+}
+
+tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
+    kotlinOptions {
+        jvmTarget = "21"
+    }
 }
