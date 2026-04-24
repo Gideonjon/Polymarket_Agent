@@ -19,7 +19,6 @@ class PolymarketApi {
         }
     }
 
-    // ⚠️ SET YOUR KEYS HERE
     private val API_KEY = "019dbf8e-f58b-7c6b-90b9-dcd9718f5471"
     private val PRIVATE_KEY = "0xdcbd7cb365893ee5881d54ccfa9c00fab38fb8ad032dd73ed7f8c2b63a915d02"
 
